@@ -1,0 +1,23 @@
+$output-bourbon-deprecation-warnings: false
+@import bourbon
+@import '../../node_modules/jeet/scss/index'
+
+@import mixin
+@import '../../node_modules/normalize.scss/normalize'
+@import fonts
+
+
+body
+	background: #ccc
+	max-width: 320px
+	+media(tablet)
+		background: red
+	+media(phone)
+		padding: 10px
+
+.wrapper
+	+media(tablet)
+		font-family: Arial
+
+h1
+	color: red
